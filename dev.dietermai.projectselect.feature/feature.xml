@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="dev.dietermai.projectselect.feature"
+      label="Project Select"
+      version="1.0.0.qualifier"
+      provider-name="Dieter Mai">
+
+   <description>
+      This plugin lets you filter for projects that you can select after. Default key binding is CTRL+6
+   </description>
+
+   <copyright>
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.core.resources" version="3.13.400" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator.resources" version="3.6.500" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.8.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.113.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.15.300" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="dev.dietermai.projectselect"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
