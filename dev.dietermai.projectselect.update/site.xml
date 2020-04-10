@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.qualifier.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.qualifier"/>
+</site>
