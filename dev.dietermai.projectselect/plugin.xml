@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="dev.dietermai.projectselect.command.dialog.open"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            description="Part of the Project Select Plugin "
+            id="dev.dietermai.projectselect.projectSelect"
+            name="Project Select">
+      </category>
+      <command
+            categoryId="dev.dietermai.projectselect.projectSelect"
+            defaultHandler="dev.dietermai.projectselect.OpenDialogHandler"
+            description="Opens the project select dialog"
+            id="dev.dietermai.projectselect.command.dialog.open"
+            name="Open Project Selesct Dialog">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            description="The context of the project select dialog"
+            id="dev.dietermai.projectselect.context"
+            name="Project Select Context">
+      </context>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="nl/en/contextHelp.xml">
+      </contexts>
+      <contexts
+            file="nl/en/contextHelp.xml"
+            plugin="dev.dietermai.projectselect">
+      </contexts>
+   </extension>
+
+</plugin>

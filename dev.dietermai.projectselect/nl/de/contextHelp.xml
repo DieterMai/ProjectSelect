@@ -1,0 +1,17 @@
+<contexts>
+	<context id="ProjectSelectDialogHelp" 
+			 title="Project Select Dialog">
+		<description>
+			Dieser Dialog erlaubt das selektieren von einem oder mehreren Project im Workspace. Das opere Eingabefeld can für die Filterung von Projekten genutzt werden. Der eingegebene text muss entweder
+			 - ein Präfix sein. Beispiel: Der String "Foo" würde das Projekt "FooBar" finden.
+			 - ein Text mit Wildcards. Beispiel: Der String "*bar" würde das Projekt "FooBar" und "BarFoo" finden.
+			 - eine CamelCase-Suche sein. Daher wenn der Project Name in Camel-/Pascalcase geschrieben ist, kann danach gesucht werden indem der erste Character sowie folgenden große buchstaben eingegeben werden. Beispiel: Das Projekt "fooBarDoRemi" kann mit dem String "FBDR" gefunden werden.
+			 - den Initialen des Projektes entsprechen. Ein Charakter wird als Initial betracted wenn er
+			   - der erste Charakter des namens ist.
+			   - ein Großbuchstabe ist.
+			   - der erste Buchstabe nach einem Charakter ist der keinem buchstaben entspricht.
+			   Beispiel: Das Projekt "org.foo.bar.blup" würden den Initialen "ofbb" entspechen.
+			Alle eingaben ignorieren Groß-/Kleinschreibung mit Ausnahme von CamelCase. Ein CamelCase Filter darf nur aus Großbuchstaben bestehen. 
+		</description>
+	</context>
+</contexts>

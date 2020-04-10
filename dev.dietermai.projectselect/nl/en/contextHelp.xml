@@ -1,0 +1,17 @@
+<contexts>
+	<context id="ProjectSelectDialogHelp" 
+			 title="Project Select Dialog">
+		<description>
+			This dialog allows the selection of one or more projects in your workspace. The text field at the top can be used to filter for projects. The entered text needs to be either
+			 - a prefix. Example: the string "Foo" would find the project "FooBar".
+			 - a wildcards containing string. Example: The string "*Bar" would find the project "FooBar" and "BarFoo"-
+			 - a camelCase search. Meaning if the projects name is written in camel-/pascalCcase, it can be search for by entering the first character following capital letters in order. Example: the the project "fooBarDoRemi" could be found with the string "FBDR".
+			 - the initials of the project. A character is considered an initial when it is
+			    - the first letter of the name,
+			    - a capital letter or
+			    - the first letter after a non letter character.
+			   E.g. The project "org.foo.bar.blup" could be found by entering "ofbb".
+			All inputs are case insensitive except camelCase. CamelCase inputs need to be all upper case.
+		</description>
+	</context>
+</contexts>
