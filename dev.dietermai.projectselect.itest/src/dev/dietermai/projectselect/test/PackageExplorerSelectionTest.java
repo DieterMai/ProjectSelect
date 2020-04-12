@@ -1,22 +1,23 @@
 package dev.dietermai.projectselect.test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import java.util.Objects;
 
+import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import dev.dietermai.projectselect.bots.PackageExplorerBot;
-import dev.dietermai.projectselect.bots.SelectProjectBot;
 import dev.dietermai.projectselect.bots.WorkbenchBot;
 
+@RunWith(SWTBotJunit4ClassRunner.class)
 public class PackageExplorerSelectionTest {
 
 	private static WorkbenchBot workbenchBot;

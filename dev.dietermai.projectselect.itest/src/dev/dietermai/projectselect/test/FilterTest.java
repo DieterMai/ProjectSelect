@@ -7,15 +7,18 @@ import static org.junit.Assert.assertTrue;
 import java.util.List;
 import java.util.Objects;
 
+import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import dev.dietermai.projectselect.bots.SelectProjectBot;
 import dev.dietermai.projectselect.bots.WorkbenchBot;
 
+@RunWith(SWTBotJunit4ClassRunner.class)
 public class FilterTest {
 
 	private static WorkbenchBot workbenchBot;
@@ -295,26 +298,6 @@ public class FilterTest {
 		assertTrue(Objects.toString(result), result.contains("alfa_bravo_charlie_delta_echo_foxtrot_golf2"));
 		assertTrue(Objects.toString(result), result.contains("alfa bravo charlie delta echo foxtrot golf2"));
 		assertTrue(Objects.toString(result), result.contains("alfa1bravo2charlie3delta4echo5foxtrot6golf2"));
-	}
-	
-	private void verifyAllMatch(SelectProjectBot selectProjectBot) {
-		List<String> result = selectProjectBot.getFilterResult();
-		assertEquals(15, result.size());
-		assertTrue(Objects.toString(result), result.contains("AlfaBravo1"));
-		assertTrue(Objects.toString(result), result.contains("AlfaBravoCharlieDeltaEchoFoxtrotGolf1"));
-		assertTrue(Objects.toString(result), result.contains("Alfa.Bravo.Charlie.Delta.Echo.Foxtrot.Golf1"));
-		assertTrue(Objects.toString(result), result.contains("Alfa-Bravo-Charlie-Delta-Echo-Foxtrot-Golf1"));
-		assertTrue(Objects.toString(result), result.contains("Alfa_Bravo_Charlie_Delta_Echo_Foxtrot_Golf1"));
-		assertTrue(Objects.toString(result), result.contains("Alfa Bravo Charlie Delta Echo Foxtrot Golf1"));
-		assertTrue(Objects.toString(result), result.contains("Alfa1Bravo2Charlie3Delta4Echo5Foxtrot6Golf1"));
-		assertTrue(Objects.toString(result), result.contains("alfabravo2"));
-		assertTrue(Objects.toString(result), result.contains("alfabravocharliedeltaechofoxtrotgolf2"));
-		assertTrue(Objects.toString(result), result.contains("alfa.bravo.charlie.delta.echo.foxtrot.golf2"));
-		assertTrue(Objects.toString(result), result.contains("alfa-bravo-charlie-delta-echo-foxtrot-golf2"));
-		assertTrue(Objects.toString(result), result.contains("alfa_bravo_charlie_delta_echo_foxtrot_golf2"));
-		assertTrue(Objects.toString(result), result.contains("alfa bravo charlie delta echo foxtrot golf2"));
-		assertTrue(Objects.toString(result), result.contains("alfa1bravo2charlie3delta4echo5foxtrot6golf2"));
-		assertTrue(Objects.toString(result), result.contains("ThisShouldNotBeDisplayed"));
 	}
 	
 	private void caseStartWithAlfab(SelectProjectBot selectProjectBot) {

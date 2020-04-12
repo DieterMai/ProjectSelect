@@ -1,13 +1,16 @@
 package dev.dietermai.projectselect.test;
 
+import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import dev.dietermai.projectselect.bots.WorkbenchBot;
 
+@RunWith(SWTBotJunit4ClassRunner.class)
 public class EmptyWorkspaceTest {
 
 	private static WorkbenchBot workbenchBot;
