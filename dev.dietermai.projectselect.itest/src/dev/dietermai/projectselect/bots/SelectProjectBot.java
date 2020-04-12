@@ -7,19 +7,15 @@ import java.util.List;
 
 import org.eclipse.swtbot.swt.finder.SWTBot;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotButton;
-import org.eclipse.swtbot.swt.finder.widgets.SWTBotList;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotShell;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotTable;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotText;
 
 public class SelectProjectBot {
-	private final SWTBotShell shell;
 	private final SWTBot bot;
 	
 	public SelectProjectBot(SWTBotShell shell) {
-		this.shell = shell;
 		this.bot = shell.bot();
-		
 	}
 	
 	public boolean isOkEnabled() {
