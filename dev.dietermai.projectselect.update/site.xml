@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.qualifier.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.qualifier"/>
+   <description name="Project Select" url="foobar">
+      A simple plugin that lets you filter for projects which you can select.
+   </description>
+   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.202004181927.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.202004181927"/>
+   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.202004181939.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.202004181939">
+      <category name="dev.dietermai.projectselect.category"/>
+   </feature>
+   <category-def name="dev.dietermai.projectselect.category" label="Project Select">
+      <description>
+         The Plugins and Features for Project Select.
+      </description>
+   </category-def>
 </site>

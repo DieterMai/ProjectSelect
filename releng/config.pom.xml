@@ -32,8 +32,7 @@
 				<extensions>true</extensions>
 			</plugin>
 
-			<!--Enable the replacement of the SNAPSHOT version in the final product 
-				configuration -->
+			<!--Enable the replacement of the SNAPSHOT version in the final product configuration -->
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-packaging-plugin</artifactId>
