@@ -39,6 +39,8 @@ public enum WorkbenchBot {
 			intorView.close();
 		}
 		bot.resetWorkbench();
+		
+		openProjectExplorerView().deleteAllProjects();
 
 		return this;
 	}

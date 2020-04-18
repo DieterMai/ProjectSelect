@@ -3,7 +3,9 @@ package dev.dietermai.projectselect.bots;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.eclipse.swt.SWT;
 import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
+import org.eclipse.swtbot.swt.finder.exceptions.WidgetNotFoundException;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotTreeItem;
 
 public class ProjectExplorerBot {
@@ -30,6 +32,21 @@ public class ProjectExplorerBot {
 	public ProjectExplorerBot selectProjects(String...items) {
 		viewBot.bot().tree().select(items);
 		return this;
+	}
+	
+	public void deleteAllProjects() {
+		if(containsProjects()) {
+			viewBot.bot().tree().selectAll();
+			viewBot.bot().activeShell().pressShortcut(SWT.NONE, SWT.DEL);
+		}
+	}
+		
+	private boolean containsProjects() {
+		try {
+			return viewBot.bot().tree().getAllItems().length >0;
+		}catch( WidgetNotFoundException wnfe) {
+			return false;
+		}
 	}
 	
 	public List<String> getSelectedProjectNames(){
