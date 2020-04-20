@@ -26,7 +26,6 @@ public class ProjectExplorerSelectionTest {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		workbenchBot = WorkbenchBot.workbenchBot;
-		workbenchBot.reset();
 		workbenchBot.createProject("Project01");
 		workbenchBot.createProject("Project02");
 		workbenchBot.createProject("Project03");
@@ -51,11 +50,11 @@ public class ProjectExplorerSelectionTest {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+		workbenchBot.reset();
 	}
 
 	@Before
 	public void setUp() throws Exception {
-		workbenchBot.reset();
 		projectExplorer = workbenchBot.openProjectExplorerView();
 		projectExplorer.show();
 	}

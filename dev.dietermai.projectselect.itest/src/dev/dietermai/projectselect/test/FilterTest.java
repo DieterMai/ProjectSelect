@@ -47,11 +47,11 @@ public class FilterTest {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+		workbenchBot.reset();
 	}
 
 	@Before
 	public void setUp() throws Exception {
-		workbenchBot.reset();
 	}
 
 	@After

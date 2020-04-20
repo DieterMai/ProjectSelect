@@ -6,6 +6,7 @@ import java.util.List;
 import org.eclipse.swt.SWT;
 import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
 import org.eclipse.swtbot.swt.finder.exceptions.WidgetNotFoundException;
+import org.eclipse.swtbot.swt.finder.widgets.SWTBotShell;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotTreeItem;
 
 public class ProjectExplorerBot {
@@ -37,7 +38,12 @@ public class ProjectExplorerBot {
 	public void deleteAllProjects() {
 		if(containsProjects()) {
 			viewBot.bot().tree().selectAll();
-			viewBot.bot().activeShell().pressShortcut(SWT.NONE, SWT.DEL);
+//			viewBot.bot().activeShell().pressShortcut(SWT.NONE, SWT.DEL);
+			viewBot.bot().activeShell().pressShortcut(SWT.NONE, SWT.DEL, (char)0);
+			SWTBotShell deleteResourcesDialog = viewBot.bot().shell("Delete Resources");
+			deleteResourcesDialog.bot().checkBox().click();
+			deleteResourcesDialog.bot().button("OK").click();
+			viewBot.bot().sleep(1000);
 		}
 	}
 		
