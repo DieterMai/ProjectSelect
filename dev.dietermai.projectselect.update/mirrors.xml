@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mirrors>
+<mirrors>
+    <mirror url="https://storage.googleapis.com/projectselect/site.xml" label="GCP mirror"/>
+    <mirror url="https://projectselect.s3.eu-central-1.amazonaws.com/site.xml" label="AWS mirror"/>
+</mirrors>

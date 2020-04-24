@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <description name="Project Select" url="https://projectselect.s3.eu-central-1.amazonaws.com/site.xml">
+<site
+      mirrorsURL="mirrors.xml">
+   <description name="Project Select" url="https://storage.googleapis.com/projectselect/site.xml">
       A simple plugin that lets you filter for projects which you can select.
    </description>
-   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.202004191551.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.202004191551">
+   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.202004241759.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.202004241759">
       <category name="dev.dietermai.projectselect.category"/>
    </feature>
    <category-def name="dev.dietermai.projectselect.category" label="Project Select">
