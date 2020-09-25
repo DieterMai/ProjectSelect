@@ -23,7 +23,7 @@
             defaultHandler="dev.dietermai.projectselect.OpenDialogHandler"
             description="Opens the project select dialog"
             id="dev.dietermai.projectselect.command.dialog.open"
-            name="Open Project Selesct Dialog">
+            name="Open Project Select Dialog">
       </command>
    </extension>
    <extension
