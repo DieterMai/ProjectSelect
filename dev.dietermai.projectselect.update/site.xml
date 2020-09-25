@@ -4,7 +4,7 @@
    <description name="Project Select" url="https://storage.googleapis.com/projectselect/site.xml">
       A simple plugin that lets you filter for projects which you can select.
    </description>
-   <feature url="features/dev.dietermai.projectselect.feature_1.0.0.202004241759.jar" id="dev.dietermai.projectselect.feature" version="1.0.0.202004241759">
+   <feature url="features/dev.dietermai.projectselect.feature_1.0.1.202009251943.jar" id="dev.dietermai.projectselect.feature" version="1.0.1.202009251943">
       <category name="dev.dietermai.projectselect.category"/>
    </feature>
    <category-def name="dev.dietermai.projectselect.category" label="Project Select">

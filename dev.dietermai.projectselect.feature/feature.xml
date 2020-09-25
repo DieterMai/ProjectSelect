@@ -2,7 +2,7 @@
 <feature
       id="dev.dietermai.projectselect.feature"
       label="Project Select"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="Dieter Mai">
 
    <description url="https://github.com/DieterMai/ProjectSelect">

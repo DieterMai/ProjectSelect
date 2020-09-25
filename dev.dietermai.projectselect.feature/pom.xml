@@ -6,7 +6,7 @@
 
 	<groupId>dev.dietermai.projectselect</groupId>
 	<artifactId>dev.dietermai.projectselect.feature</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>eclipse-feature</packaging>
 	
 	<parent>
